@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/css/customer.css">
+    <link rel="stylesheet" href="/css/item.css">
+    <link rel="stylesheet" href="/css/Order.css">
+    <link rel="stylesheet" href="/index.css">
+    
+ </style>
+</head>
+<body>
+    <header>
+        <img src="/assets/image/images__2_-removebg-preview.png" alt="">
+        <div class="title">
+        <h1 style="color: rgb(6, 189, 6);font-size: 4rem; margin-top: -10px;"> Dinu Pos System</h1>
+    </div>
+        <nav class="navbar">
+            
+                    <a href="#Dashboard">Dashboard</a>
+                    <a href="#Customer">Customer</a>
+                    <a href="#Item">Item</a>
+                    <a href="#Order">Order</a>
+                  
+                
+        </nav>
+    </header>
+
+    <section class="Dashboard" id="Dashboard">
+       <h1 style="font-size: 28px; border-bottom: 3px solid rgb(3, 110, 3);"> Dashboard</h1>
+      </section>
+  
+
+    <section class="Customer" id="Customer">
+        <div class="cus-title">
+            <h2>Customer Details</h2>
+          </div>
+          <div class="cus-all">
+            <form class="customer-form">
+              <div class="input-case">
+                <label for="customer-id">Customer ID</label>
+                <input type="text" name="customer-id" id="customer-id" />
+              </div>
+              <div class="input-case">
+                <label for="customer-name">Name</label>
+                <input type="text" name="customer-name" id="customer-name" />
+              </div>
+              <div class="input-case">
+                <label for="customer-address">Address</label>
+                <input type="text" name="customer-address" id="customer-address" />
+              </div>
+              <div class="input-case">
+                <label for="customer-telephone">Mobile No</label>
+                <input
+                  type="text"
+                  name="customer-telephone"
+                  id="customer-telephone"
+                />
+              </div>
+              <div class="input-case">
+                <label for="customer-email">Email</label>
+                <input type="email" name="customer-email" id="customer-email" />
+              </div>
+              <div class="btn-case">
+                <button type="submit" class="add-btn">Add</button>
+                <button type="submit" class="delete-btn">Delete</button>
+                <button type="submit" class="update-btn">Update</button>
+              </div>
+            </form>
+            <table
+              class="cus-table"
+              id="customerTable"
+            >
+              <thead id="cus-table">
+                <tr id="tableraw">
+                  <th scope="col">Customer ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Mobile No</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody id="customerTableBody">
+                <tr></tr>
+              </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <!-- Item -->
+
+    <section class="Item" id="Item">
+        <div class="item-title">
+            <h2>Item Details</h2>
+          </div>
+          <div class="item-all">
+            <form class="item-form">
+              <div class="input-case">
+                <label for="item-id">Item ID</label>
+                <input type="text" name="item-id" id="item-id" />
+              </div>
+              <div class="input-case">
+                <label for="item-name">Item name</label>
+                <input type="text" name="item-name" id="item-name" />
+              </div>
+              <div class="input-case">
+                <label for="unit-price">Unit price</label>
+                <input type="text" name="unit-price" id="unit-price" />
+              </div>
+              <div class="input-case">
+                <label for="Qty">Quantity</label>
+                <input
+                  type="number"
+                  name="Qty"
+                  id="Qty"
+                />
+              </div>
+              <div class="input-case">
+                <label for="description">Description</label>
+                <input type="text" name="item-description" id="item-description" />
+              </div>
+              <div class="btn-case">
+                <button type="submit" class="add-btn">Add</button>
+                <button type="submit" class="delete-btn">Delete</button>
+                <button type="submit" class="update-btn">Update</button>
+              </div>
+            </form>
+            <table
+              class="item-table"
+              id="itemTable"
+            >
+              <thead id="item-table">
+                <tr id="tableraw">
+                  <th scope="col">Item ID</th>
+                  <th scope="col">Item Name</th>
+                  <th scope="col">Unit Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="itemTableBody">
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+    <!-- Order -->
+
+    <section class="Order" id="Order">
+        <div class="item-title">
+            <h2>Order Details</h2>
+          </div>
+          <div class="order-all">
+            <form class="order-form">
+              <div class="input-case">
+                <label for="order-id">Order ID</label>
+                <input type="text" name="order-id" id="order-id" />
+              </div>
+              <div class="input-case">
+                <label for="customer-ID">Customer ID</label>
+                <input type="text" name="customer-ID" id="customer-ID" />
+              </div>
+
+              <div class="input-case">
+                <label for="description">Item ID</label>
+                <input type="text" name="item-id" id="item-id" />
+              </div>
+
+              <div class="input-case">
+                <label for="unit-price">Unit price</label>
+                <input type="text" name="unit-price" id="unit-price" />
+              </div>
+
+              <div class="input-case">
+                <label for="Qty">Quantity</label>
+                <input
+                  type="number"
+                  name="Qty"
+                  id="Qty"
+                />
+              </div>
+              
+
+              <div class="input-case">
+                <label for="description">Date</label>
+                <input type="text" name="date" id="date" />
+              </div>
+
+              <div class="input-case">
+                <label for="description">Description</label>
+                <input type="text" name="order-description" id="order-description" />
+              </div>
+
+              <div class="btn-case">
+                <button type="submit" class="add-btn">Save</button>
+                <button type="submit" class="placeOrder-btn">Place Order</button>
+              </div>
+            </form>
+
+            <table
+            class="order-table"
+            id="orderTable"
+          >
+            <thead id="order-table">
+              <tr id="tableraw">
+                <th scope="col">Order ID</th>
+                <th scope="col">Customer ID</th>
+                <th scope="col">Item ID</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody id="orderTableBody">
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+
+    </section>
+
+</body>
+</html>
